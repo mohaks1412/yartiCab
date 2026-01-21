@@ -40,7 +40,7 @@
   min-width: 0;
 }
 
-.feature-card li 
+.feature-card li{ 
   list-style: none;
   font-size: calc(14 * var(--px));
   color: #333;
