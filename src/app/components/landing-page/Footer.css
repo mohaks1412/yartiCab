@@ -1,0 +1,57 @@
+.footer-container {
+  background-color: #000;
+  color: #fff;
+  /* Proportional padding */
+  padding: calc(30 * var(--px)) calc(20 * var(--px)) calc(30 * var(--px)) calc(20 * var(--px));
+  text-align: center;
+  font-family: Arial, sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Brand Section */
+.footer-logo {
+  margin-bottom: calc(40 * var(--px));
+}
+
+.footer-logo img {
+  /* Boosted logo size for better visibility */
+  height: calc(80 * var(--px));
+  padding: calc(8 * var(--px));
+  border-radius: calc(6 * var(--px));
+  object-fit: contain;
+}
+
+/* Navigation Links - Fluid & Readable */
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  gap: calc(30 * var(--px));
+  margin-bottom: calc(40 * var(--px));
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.footer-nav a {
+  color: #fff;
+  text-decoration: none;
+  /* FORCED SCALING: Direct math to resize as you drag window */
+  font-size: calc(16 * (100cqi / 1440));
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.footer-nav a:hover {
+  color: #4d7c32;
+}
+
+/* Copyright Section */
+.copyright {
+  /* FORCED SCALING */
+  font-size: calc(14 * (100cqi / 1440));
+  color: #888;
+  border-top: var(--divider-w) solid #333;
+  padding-top: calc(25 * var(--px));
+  text-transform: uppercase;
+  letter-spacing: calc(1 * var(--px));
+}

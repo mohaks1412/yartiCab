@@ -1,0 +1,156 @@
+.main-wrapper {
+  
+  margin: calc(48 * var(--px)) auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  width: 95%;
+}
+
+/* Download & Partner Section - Boosted Version */
+.cta-container {
+  display: flex;
+  align-items: center;
+  border: calc(2 * var(--px)) dashed #4285f4;
+  padding: calc(48 * var(--px)); /* Increased padding */
+  margin-bottom: calc(64 * var(--px));
+  gap: calc(48 * var(--px)); /* Increased gap */
+}
+
+.download-app-side {
+  flex: 1.3;
+  display: flex;
+  align-items: center;
+  gap: calc(32 * var(--px));
+}
+
+.phone-mockups {
+  /* Increased mockup size for more visual "fill" */
+  width: calc(240 * var(--px));
+  flex-shrink: 0;
+}
+
+.phone-mockups img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.download-content h2 {
+  /* FORCED SCALING - Boosted size */
+  font-size: calc(36 * (100cqi / 1440));
+  font-weight: 900;
+  line-height: 1.1;
+  margin: 0 0 calc(16 * var(--px)) 0;
+  text-transform: uppercase;
+}
+
+.text-green {
+  color: #2e7d32;
+}
+
+.promo-box {
+  /* FORCED SCALING */
+  font-size: calc(18 * (100cqi / 1440));
+  margin-bottom: calc(24 * var(--px));
+  line-height: 1.4;
+}
+
+.download-label {
+  display: block;
+  font-weight: 700;
+  font-size: calc(20 * (100cqi / 1440));
+  margin-bottom: calc(12 * var(--px));
+}
+
+.store-btns {
+  display: flex;
+  gap: calc(15 * var(--px));
+}
+
+.store-btns img {
+  /* Increased button size */
+  height: calc(48 * var(--px));
+  cursor: pointer;
+}
+
+/* Vertical Divider - Scaled & Weighty */
+.v-divider {
+  width: calc(2 * var(--px));
+  height: calc(240 * var(--px));
+  background-color: #000;
+  flex-shrink: 0;
+}
+
+/* Driver Partner Side - Boosted */
+.driver-side {
+  flex: 1;
+  padding-left: calc(24 * var(--px));
+}
+
+.driver-side h2 {
+  /* FORCED SCALING */
+  font-size: calc(36 * (100cqi / 1440));
+  font-weight: 900;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+.driver-side p {
+  /* FORCED SCALING */
+  font-size: calc(20 * (100cqi / 1440));
+  line-height: 1.5;
+  margin-bottom: calc(32 * var(--px));
+}
+
+.btn-download-app {
+  background-color: #4d7c32;
+  color: white;
+  border: none;
+  padding: calc(16 * var(--px)) calc(32 * var(--px));
+  font-weight: 800;
+  /* FORCED SCALING */
+  font-size: calc(18 * (100cqi / 1440));
+  border-radius: calc(6 * var(--px));
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+/* Operational Cities Section - Fluid & Filled */
+.cities-section {
+  text-align: center;
+  padding: calc(32 * var(--px)) 0;
+  border-top: var(--divider-w) solid #eee;
+}
+
+.cities-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: calc(32 * var(--px));
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.cities-list h3 {
+  /* FORCED SCALING */
+  font-size: calc(24 * (100cqi / 1440));
+  font-weight: 800;
+  margin: 0;
+  color: #1e5a00;
+}
+
+.cities-list .city-link {
+  text-decoration: none;
+  color: #000;
+  /* FORCED SCALING */
+  font-size: calc(20 * (100cqi / 1440));
+  font-weight: 600;
+  border-bottom: calc(2 * var(--px)) solid #000;
+  padding-bottom: calc(2 * var(--px));
+  transition: color 0.2s ease;
+}
+
+.city-link:hover {
+  color: #2e7d32;
+  border-color: #2e7d32;
+}

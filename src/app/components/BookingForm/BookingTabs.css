@@ -1,0 +1,72 @@
+.tabs-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #fff;
+}
+
+.tab-btn {
+  flex: 1;
+  padding: calc(16 * var(--px)) 0;
+  margin: calc(16 * var(--px)) 0;
+  border: none;
+  background: none;
+  font-weight: 700;
+  font-size: calc(16 * var(--px));
+  color: #555;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+/* The vertical lines between buttons */
+.tab-btn:not(:first-child) {
+  border-left: 1px solid #eee;
+}
+
+/* The Active Look: Solid Green block */
+.tab-btn.active {
+  border-radius: calc(4 * var(--px));
+  background-color: #2e7d32;
+  color: #fff;
+  border-left: none; 
+}
+
+/* If the button AFTER an active button has a border, hide it for a cleaner look */
+.tab-btn.active + .tab-btn {
+  border-left: none;
+}
+
+.autocomplete-wrapper {
+  position: relative; /* Anchor for the absolute dropdown */
+  width: 100%;
+}
+
+.suggestions-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: #ffffff;
+  border-radius: calc(8 * var(--px));
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  z-index: 100;
+  margin-top: calc(5 * var(--px));
+  padding: calc(8 * var(--px)) 0;
+  list-style: none;
+  max-height: calc(200 * var(--px));
+  overflow-y: auto;
+}
+
+.suggestions-dropdown li {
+  padding: calc(12 * var(--px)) calc(16 * var(--px));
+  font-size: calc(14 * (100cqi / 1440));
+  color: #333;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.suggestions-dropdown li:hover {
+  background-color: #f0fdf4; /* Very light green tint */
+  color: #2e7d32;
+}

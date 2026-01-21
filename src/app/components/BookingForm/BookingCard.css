@@ -1,0 +1,58 @@
+/* This is the main body that holds the rows */
+.booking-form-grid {
+  display: flex;
+  flex-direction: column;
+  gap: calc(24 * var(--px)); /* Vertical space between rows */
+  width: 100%;
+}
+
+/* This is the magic line for the 2-column Figma look */
+.form-grid-row {
+  display: grid !important; 
+  grid-template-columns: 1fr 1fr; /* Force two equal columns */
+  column-gap: calc(48 * var(--px)); /* The horizontal gap from Figma */
+  align-items: end; /* Aligns the underlines perfectly */
+  width: 100%;
+}
+
+
+/* Center the button container */
+.form-footer-action {
+  display: flex;
+  justify-content: center;
+  margin-top: calc(15 * var(--px));
+  width: 100%;
+}
+
+/* The Green Explore Button */
+.explore-cabs-btn {
+  background-color: #2e7d32; /* Primary brand green */
+  color: #ffffff;
+  /* Proportional padding and rounding */
+  padding: calc(12 * var(--px)) calc(45 * var(--px));
+  border-radius: calc(8 * var(--px)); /* "A little rounded" as per Figma */
+  
+  /* Text styling */
+  font-weight: 800;
+  font-size: calc(16 * (100cqi / 1440));
+  text-transform: uppercase;
+  letter-spacing: calc(0.5 * var(--px));
+  
+  /* Reset defaults */
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  
+  /* Subtle shadow for depth */
+  box-shadow: 0 4px 12px rgba(46, 125, 50, 0.2);
+}
+
+.explore-cabs-btn:hover {
+  background-color: #1b5e20; /* Darker green on hover */
+  transform: translateY(-1px);
+  box-shadow: 0 6px 15px rgba(46, 125, 50, 0.3);
+}
+
+.explore-cabs-btn:active {
+  transform: translateY(0);
+}

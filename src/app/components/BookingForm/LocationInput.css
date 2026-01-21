@@ -1,0 +1,59 @@
+.input-field-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: calc(20 * var(--px));
+  width: 100%;
+}
+
+.input-label {
+  font-size: calc(12 * (100cqi / 1440));
+  font-weight: 800;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: calc(0.5 * var(--px));
+  margin-bottom: calc(4 * var(--px));
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ccc; /* The thin line from Figma */
+  padding-bottom: calc(4 * var(--px));
+  transition: border-color 0.3s ease;
+}
+
+.input-wrapper:focus-within {
+  border-bottom-color: #2e7d32; /* Turns green on focus */
+}
+
+.custom-input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: calc(15 * (100cqi / 1440));
+  color: #111;
+  padding: calc(4 * var(--px)) 0;
+}
+
+.custom-input::placeholder {
+  color: #bbb;
+  font-weight: 400;
+}
+
+.input-icon {
+  width: calc(20 * var(--px));
+  height: calc(20 * var(--px));
+  color: #888;
+  margin-left: calc(10 * var(--px));
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Specific color for the location crosshair if active */
+.input-wrapper:focus-within .input-icon {
+  color: #2e7d32;
+}

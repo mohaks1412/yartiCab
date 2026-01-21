@@ -1,0 +1,65 @@
+.form-input-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Small, bold uppercase header as seen in Frame 1686552729 */
+.input-header {
+  font-size: calc(12 * var(--px));
+  font-weight: 800;
+  color: #333;
+  text-transform: uppercase;
+  margin-bottom: calc(4 * var(--px));
+  letter-spacing: calc(0.5 * var(--px));
+}
+
+/* The horizontal row that creates the underline */
+.input-underline-row {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #dcdcdc; /* Subtle grey line from Figma */
+  padding-bottom: calc(6 * var(--px));
+  transition: border-color 0.2s ease;
+}
+
+/* Focus state: changes the underline color to the brand green */
+.input-underline-row:focus-within {
+  border-bottom-color: #2e7d32;
+}
+
+/* The core input field with all browser styling removed */
+.clean-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: calc(15 * var(--px));
+  color: #111;
+  padding: 0;
+  width: 100%;
+}
+
+.clean-input::placeholder {
+  color: #bbbbbb;
+  font-weight: 400;
+}
+
+/* Icon area for calendars, pins, or clocks */
+.input-icon-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(20 * var(--px));
+  height: calc(20 * var(--px));
+  margin-left: calc(8 * var(--px));
+  color: #888;
+  flex-shrink: 0;
+}
+
+/* SVG icon sizing */
+.input-icon-area svg {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}

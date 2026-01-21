@@ -1,0 +1,57 @@
+.booking-portal-wrapper {
+  width: 100%;
+  height: calc(650 * var(--px));
+  background-image: url('/road-trip.svg');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  container-type: inline-size;
+}
+
+.portal-container {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: calc(60 * var(--px));
+}
+
+.portal-message {
+  flex: 1.2;
+}
+
+.portal-message h1 {
+  font-size: calc(52 * var(--px));
+  font-weight: 900;
+  color: #ffffff;
+  line-height: 1.1;
+  text-transform: uppercase;
+  text-shadow: 0 calc(4 * var(--px)) calc(12 * var(--px)) rgba(0,0,0,0.5);
+}
+
+.highlight-green {
+  color: #76ff03;
+}
+
+.booking-form-dock {
+  flex: 0.9;
+  background-color: #ffffff;
+  padding: calc(16 * var(--px));
+  border-radius: var(--radius-md);
+  box-shadow: 0 calc(25 * var(--px)) calc(60 * var(--px)) rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+  min-height: calc(480 * var(--px));
+  display: flex;
+  flex-direction: column;
+}
+
+.form-inner-content {
+  flex: 1;
+  padding: calc(40 * var(--px));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

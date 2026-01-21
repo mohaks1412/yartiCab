@@ -1,0 +1,79 @@
+.landing-container {
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  width: 95%;
+}
+
+/* --- Section 3: Testimonials (Green Background) --- */
+.testimonials-wrapper {
+  background-color: #1e5a00;
+  padding: calc(40 * var(--px)) calc(20 * var(--px));
+  text-align: center;
+  /* Ensure the wrapper allows its children to shrink */
+  min-width: 0;
+  border-radius: var(--radius-md);
+}
+
+.testimonials-wrapper h2 {
+  color: white;
+  text-decoration: underline;
+  margin-bottom: calc(30 * var(--px));
+  /* FORCED SCALING: Direct math bypasses variable caching */
+  font-size: calc(28 * (100cqi / 1440));
+  font-weight: 700;
+}
+
+.testimonial-grid {
+  display: flex;
+  flex-direction: row;
+  gap: calc(15 * var(--px));
+  justify-content: center;
+  width: 100%;
+}
+
+.testimonial-card {
+  background: white;
+  flex: 1;
+  padding: calc(20 * var(--px));
+  text-align: left;
+  /* Scales the height proportionally to the width */
+  min-height: calc(250 * var(--px));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* CRITICAL: Unlocks text shrinking in flexbox */
+  min-width: 0;
+  border-radius: var(--radius-md);
+}
+
+.stars {
+  /* Scales the star rating symbols */
+  font-size: calc(16 * var(--px));
+  color: #3b82f6;
+  margin-bottom: calc(10 * var(--px));
+}
+
+.testimonial-content {
+  /* FORCED SCALING */
+  font-size: calc(13 * (100cqi / 1440));
+  line-height: 1.5;
+  color: #333;
+}
+
+.author-info {
+  margin-top: calc(15 * var(--px));
+}
+
+.author-name {
+  font-weight: bold;
+  display: block;
+  /* FORCED SCALING */
+  font-size: calc(14 * (100cqi / 1440));
+  color: #000;
+}
+
+.author-loc {
+  /* FORCED SCALING */
+  font-size: calc(11 * (100cqi / 1440));
+  color: #888;
+}

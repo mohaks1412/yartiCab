@@ -1,0 +1,63 @@
+.benefits-section {
+  width: 90%;
+  margin: var(--gap-md) auto;
+  border-radius: var(--radius-md);
+  background-color: #f4f6f9;
+  box-sizing: border-box;
+  /* Shadow scales with the container */
+  box-shadow: 0 calc(3 * var(--px)) calc(14 * var(--px)) rgba(0,0,0,0.05);
+  overflow: hidden; /* Ensures header corners stay rounded */
+}
+
+.benefits-header {
+  background-color: #2e7d32;
+  color: #ffffff;
+  padding: calc(14 * var(--px)) calc(28 * var(--px));
+  /* DIRECT MATH: Removed clamp to allow full scaling */
+  font-size: calc(20 * var(--px)); 
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.benefits-body {
+  padding: calc(28 * var(--px)) calc(43 * var(--px));
+  /* Ensure the body allows children to shrink */
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.intro-text {
+  /* DIRECT MATH */
+  font-size: calc(16 * var(--px));
+  color: #444;
+  margin-bottom: var(--gap-md);
+  line-height: 1.4;
+}
+
+.benefits-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  /* Gap scales proportionally */
+  gap: calc(17 * var(--px));
+  width: 100%;
+}
+
+.benefit-item {
+  /* DIRECT MATH */
+  font-size: calc(14 * var(--px));
+  color: #555;
+  line-height: 1.5;
+  text-align: justify;
+  /* Unlock flexbox sizing limits */
+  min-width: 0;
+}
+
+.benefit-item strong {
+  color: #333;
+  font-weight: 700;
+}

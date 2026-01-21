@@ -1,0 +1,59 @@
+.trip-type-selector {
+  display: flex;
+  justify-content: center;
+  gap: calc(20 * var(--px));
+  margin-bottom: calc(25 * var(--px));
+}
+
+.trip-option {
+  display: flex;
+  align-items: center;
+  gap: calc(8 * var(--px));
+  padding: calc(6 * var(--px)) calc(16 * var(--px));
+  border-radius: calc(20 * var(--px));
+  cursor: pointer;
+  font-weight: 600;
+  font-size: calc(14 * (100cqi / 1440));
+  color: #666;
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+/* The Active "Pill" Look from Figma */
+.trip-option.active {
+  color: #2e7d32;
+  background-color: #f0fdf4; /* Light green background */
+  border: 1px solid #2e7d32;
+}
+
+/* Hide default radio input */
+.trip-option input {
+  display: none;
+}
+
+/* Custom Radio Dot */
+.radio-dot {
+  width: calc(14 * var(--px));
+  height: calc(14 * var(--px));
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+}
+
+.trip-option.active .radio-dot {
+  border-color: #2e7d32;
+}
+
+/* Inner Solid Dot for Active State */
+.trip-option.active .radio-dot::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(8 * var(--px));
+  height: calc(8 * var(--px));
+  background-color: #2e7d32;
+  border-radius: 50%;
+}

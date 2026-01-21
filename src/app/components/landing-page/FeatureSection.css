@@ -1,0 +1,112 @@
+.info-section-wrapper {
+  width: 95%;
+  margin: calc(32 * var(--px)) auto;
+  font-family: sans-serif;
+  width: 95%;
+}
+
+.features-grid {
+  display: grid;
+  /* 3-column layout as seen in typical feature sections */
+  grid-template-columns: repeat(3, 1fr);
+  gap: calc(32 * var(--px));
+  padding: calc(32 * var(--px));
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 0; /* Unlocks text shrinking in grid */
+}
+
+.icon-wrapper {
+  width: calc(80 * var(--px));
+  height: calc(80 * var(--px));
+  margin-bottom: calc(16 * var(--px));
+}
+
+.icon-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.feature-card h3 {
+  /* FORCED SCALING: Bypassing variable cache */
+  font-size: calc(24 * (100cqi / 1440));
+  color: #444;
+  margin: calc(8 * var(--px)) 0;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.feature-card p {
+  /* FORCED SCALING */
+  font-size: calc(14.4 * (100cqi / 1440));
+  color: #666;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Info Card Section */
+.info-card {
+  background-color: #f1f5f9;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: var(--divider-w) solid #e2e8f0;
+  margin-top: calc(48 * var(--px));
+}
+
+.info-header {
+  background-color: #1e5a00;
+  padding: calc(20 * var(--px));
+  border-bottom: calc(4 * var(--px)) solid #ffffff;
+}
+
+.info-header h2 {
+  color: #ffffff;
+  text-align: center;
+  font-weight: 700;
+  font-size: calc(17.6 * (100cqi / 1440));
+  letter-spacing: calc(0.4 * var(--px));
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.info-body {
+  padding: calc(32 * var(--px));
+}
+
+.info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: calc(24 * var(--px));
+  min-width: 0;
+}
+
+.custom-bullet {
+  width: calc(6 * var(--px));
+  height: calc(6 * var(--px));
+  background-color: #94a3b8;
+  border-radius: 50%;
+  margin-top: calc(10 * var(--px));
+  margin-right: calc(16 * var(--px));
+  flex-shrink: 0;
+}
+
+.info-text {
+  color: #4b5563;
+  font-size: calc(14 * (100cqi / 1440));
+  line-height: 1.6;
+  margin: 0;
+}
